@@ -1,3 +1,4 @@
+// got access to class
 function App() {
   const stailNama = {
     color: "red",
