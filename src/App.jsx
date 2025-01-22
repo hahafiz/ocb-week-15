@@ -1,4 +1,6 @@
 // got access to class
+// progress: taking notes on notion
+
 function App() {
   const stailNama = {
     color: "red",
