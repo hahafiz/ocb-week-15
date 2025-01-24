@@ -7,6 +7,8 @@ function App() {
   //   fontSize: 50,
   // };
 
+  // learning debugging jwt for first 15min
+
   return (
     <div
       style={{
@@ -18,40 +20,12 @@ function App() {
     >
       <h1 style={{ fontWeight: 200 }}>React App</h1>
       <p>Hello World</p>
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
-      <Title />
-      <Cat />
+      <Title name="Qamarul Hafiz" role="Frontend Developer" isManager={true} />
+      <Title
+        name="MeowPanda"
+        role="Meowing panda"
+        meow={() => console.log("Meowimmapanda!")}
+      />
     </div>
   );
 }

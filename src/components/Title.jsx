@@ -2,9 +2,10 @@
 //   return <h1>Title Component</h1>;
 // }
 
-const Title = () => {
-  const name = "Qamarul Hafiz";
-  const role = "Frontend Developer";
+const Title = (props) => {
+  // const name = "Qamarul Hafiz";
+  // const role = "Frontend Developer";
+  props.meow?.();
 
   return (
     <div
@@ -15,8 +16,9 @@ const Title = () => {
         backgroundColor: "burlywood",
       }}
     >
-      <p>{name}</p>
-      <p>{role}</p>
+      <p style={{ fontWeight: "bold", fontSize: 40 }}>{props.name}</p>
+      <p>{props.role}</p>
+      {props.isManager && <p style={{ color: "green" }}>Manager</p>}
     </div>
   );
 };
